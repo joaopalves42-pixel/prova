@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutorCar</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("./logo.png") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .navbar {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: bold;
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+        }
+
+        .nav-link:hover {
+            color: #f1cf09 !important;
+        }
+
+        .carousel-caption h5,
+        .carousel-caption p {
+            color: #000000;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: none;
+            color: #000000;
+        }
+
+        .card-title {
+            color: #ffffff;
+        }
+
+        .btn-custom {
+            background-color: #ffffff;
+            color: #1c1c1c;
+            border: none;
+            font-weight: bold;
+        }
+
+        .btn-custom:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 90px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        #carros {
+            background-color: #1c1c1c;
+        }
+
+        #botao {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center p-4" id="nome">
+        <h1 class="display-4" style="font-family: 'Cinzel', serif; color: #d4af37;">AutoCar
+        </h1>
+        <p class="lead" style="color: #d4af37; font-family: 'Cinzel', serif;">Luxo sobre Rodas</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#" style="color: #d4af37;">
+                <img src="./logo.png" alt="Logo Burg Beer" width="40" height="40"
+                    class="me-2">
+                AutoCar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#carros">Carros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contatinho.html">Converse Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./exposição.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./exposicao2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./exposicao3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <hr>
+        <section id="carros" class="container text-center">
+            <h2 class="mb-5 text-warning" style="font-family: 'Cinzel', serif;">Carros</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="./cayene.png" class="card-img-top"
+                            alt="Cheeseburger">
+                        <div class="card-body">
+                            <h5 class="card-title">Porsche Cayene</h5>
+                            <p class="card-text">SUV esportivo que une luxo e performance.
+                                Design robusto com linhas dinâmicas e modernas.
+                                Interior sofisticado, repleto de tecnologia premium.
+                                Motor potente que garante emoção e versatilidade.
+                                Ideal para famílias que não abrem mão do luxo.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                Ver Detalhes
+                            </button>
+
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Porsche Cayene</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Preço: R$ 890.000,00
+                                            Detalhes: SUV esportivo, conforto premium e tecnologia avançada.
+                                            Equilíbrio entre potência e sofisticação.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Sair</button>
+                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="./rolls royce.png" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Rolls Royce</h5>
+                            <p class="card-text">Um ícone absoluto do luxo sobre rodas.
+                                Interior artesanal com couro e madeira nobre.
+                                Conforto silencioso, como uma sala de estar móvel.
+                                Motor V12 que entrega potência suave e elegante.
+                                Perfeito para quem busca exclusividade e status.</p>
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">
+                                Ver Detalhes
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Rolls Royce</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Preço: R$ 6.500.000,00
+                                            Detalhes: Luxo absoluto, interior artesanal e motor V12 silencioso.
+                                            Exclusividade digna da realeza.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Sair</button>
+                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="./lamborghini.png" class="card-img-top"
+                            alt="Veggie Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Lamborghini Aventador</h5>
+                            <p class="card-text">Superesportivo de presença marcante e agressiva.
+                                Design aerodinâmico que impressiona à primeira vista.
+                                Interior luxuoso com acabamentos em fibra de carbono.
+                                Motor V12 que entrega velocidade e adrenalina pura.
+                                Um carro feito para ser o centro das atenções.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3">
+                                Ver Datalhes
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Lamborghini Aventador
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Preço: R$ 4.200.000,00
+                                            Detalhes: Design agressivo, motor V12 e performance de superesportivo.
+                                            Feita para emocionar e impressionar.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Sair</button>
+                                            <button type="button" class="btn btn-primary">Comprado</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="./bugatti.png" class="card-img-top"
+                            alt="Cheeseburger">
+                        <div class="card-body">
+                            <h5 class="card-title">Bugatti Chiron</h5>
+                            <p class="card-text">Um dos hipercarros mais rápidos do mundo, com motor W16 quadriturbo de
+                                1.500 cv.
+                                Design aerodinâmico e agressivo, feito para performance extrema.
+                                Interior luxuoso, unindo tecnologia e artesanato exclusivo.
+                                Velocidade máxima acima dos 400 km/h.
+                                Símbolo de poder e exclusividade absoluta.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal5">
+                                Ver Detalhes
+                            </button>
+
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Bugatti Chiron</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Preço: R$ 70.000.000,00
+                                            Detalhes: Hipercarro de 1.500 cv, interior artesanal e velocidade acima dos
+                                            400 km/h.
+                                            O auge da exclusividade e da engenharia automotiva.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Sair</button>
+                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="./bmw.png" class="card-img-top"
+                            alt="Cheeseburger">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW M5</h5>
+                            <p class="card-text">Sedã esportivo que equilibra conforto e agressividade.
+                                Equipado com motor V8 biturbo de mais de 600 cv.
+                                Interior premium com tecnologia de ponta e estilo refinado.
+                                Tração inteligente que garante estabilidade em qualquer condição.
+                                O carro ideal para quem busca luxo e adrenalina no dia a dia.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal4">
+                                Ver Detalhes
+                            </button>
+
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">BMW M5</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Preço: R$ 750.000,00
+                                            Detalhes: Sedã esportivo V8 biturbo de 600+ cv, tecnologia de ponta e
+                                            conforto premium.
+                                            Perfeito para quem busca luxo e adrenalina no dia a dia.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Sair</button>
+                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="./audi.png" class="card-img-top"
+                            alt="Cheeseburger">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi R8</h5>
+                            <p class="card-text">Superesportivo icônico com motor V10 naturalmente aspirado.
+                                Design elegante com linhas futuristas e iluminação em LED.
+                                Interior sofisticado e focado na experiência do motorista.
+                                Aceleração de 0 a 100 km/h em pouco mais de 3 segundos.
+                                Perfeito equilíbrio entre luxo, esportividade e inovação alemã.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal6">
+                                Ver Detalhes
+                            </button>
+
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Audi R8</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Preço: R$ 1.400.000,00
+                                            Detalhes: Superesportivo V10 com aceleração brutal e design elegante.
+                                            Um ícone que une luxo, esportividade e inovação alemã.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Sair</button>
+                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card p-3">
+                            <img src="./ferrari.png" class="card-img-top"
+                                alt="Cheeseburger">
+                            <div class="card-body">
+                                <h5 class="card-title">Ferrari SF90 Stradale</h5>
+                                <p class="card-text">O primeiro híbrido plug-in da Ferrari, combinando potência elétrica
+                                    e motor V8 biturbo.
+                                    Entrega impressionantes 1.000 cv de potência.
+                                    Design agressivo, inspirado nos carros de Fórmula 1.
+                                    Interior luxuoso e tecnológico, feito para máxima performance.
+                                    Equilíbrio entre inovação, velocidade e tradição Ferrari.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal14">
+                                    Ver Detalhes
+                                </button>
+
+                                <div class="modal fade" id="exampleModal14" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Ferrari SF90
+                                                    Stradale</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Preço: R$ 9.800.000,00
+                                                Detalhes: Híbrido plug-in de 1.000 cv, design arrojado e tecnologia de
+                                                Fórmula 1.
+                                                Inovação e performance no auge da Ferrari.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Sair</button>
+                                                <button type="button" class="btn btn-primary">Comprar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3">
+                            <img src="./carro.png" class="card-img-top" alt="Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">Bentley Continental GT</h5>
+                                <p class="card-text">Um coupé de luxo com motor W12 biturbo de 635 cv.
+                                    Interior artesanal com couro, madeira nobre e acabamentos exclusivos.
+                                    Conforto inigualável mesmo em alta velocidade.
+                                    Design elegante que mistura tradição britânica e esportividade.
+                                    Perfeito para viagens longas com máximo requinte.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal8">
+                                    Ver Detalhes
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal8" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Bentley Continental
+                                                    GT</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Preço: R$ 3.200.000,00
+                                                Detalhes: Coupé de luxo W12 com 635 cv, interior artesanal em couro e
+                                                madeira.
+                                                O máximo em conforto britânico.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Sair</button>
+                                                <button type="button" class="btn btn-primary">Comprar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3">
+                            <img src="./mclaren.png" class="card-img-top"
+                                alt="Veggie Burger">
+                            <div class="card-body">
+                                <h5 class="card-title">McLaren 720S</h5>
+                                <p class="card-text">Superesportivo leve, feito em fibra de carbono.
+                                    Motor V8 biturbo de 720 cv garante aceleração brutal.
+                                    Design futurista com portas diédricas impressionantes.
+                                    Interior focado na experiência de pilotagem.
+                                    Um carro que entrega velocidade, precisão e exclusividade.</p>
+                                <!-- Button trigger modal -->
+                                <br>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal9">
+                                    Ver Datalhes
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal9" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">McLaren 720S
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Preço: R$ 5.000.000,00
+                                                Detalhes: Supercarro V8 biturbo de 720 cv, leve, aerodinâmico e
+                                                futurista.
+                                                Feito para quem vive a velocidade.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Sair</button>
+                                                <button type="button" class="btn btn-primary">Comprado</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <hr>
+        <section style="background-color: #1c1c1c;" id="sobre">
+            <h1 style="text-align: center; color: #d4af37; font-family: 'Cinzel', serif;">
+                A HISTORIA DA AUTOCAR</h1>
+            <p style="text-align: center;">
+                A Autocar – Carros de Luxo nasceu de um sonho compartilhado entre dois amigos de longa data: Grilo e
+                Daniel.
+
+                Desde jovens, ambos eram apaixonados pelo mundo automotivo. Grilo, sempre visionário e detalhista, tinha
+                fascínio pela engenharia e pelo design dos carros. Já Daniel, com um olhar empreendedor e estratégico,
+                enxergava além das máquinas: via a oportunidade de transformar essa paixão em um negócio diferenciado.
+
+                A ideia surgiu em uma viagem ao exterior, quando visitaram juntos algumas concessionárias de luxo. Ao
+                perceberem como marcas internacionais criavam experiências exclusivas para seus clientes, decidiram
+                trazer essa proposta para o Brasil — mas com um toque próprio: não seria apenas uma loja de automóveis,
+                mas um espaço que traduzisse status, exclusividade e sofisticação.
+
+                Em 2015, após anos de planejamento, nasceu oficialmente a Autocar. No início, a empresa contava com
+                apenas alguns modelos importados de alto padrão, vendidos em um showroom modesto, mas que já refletia a
+                essência da marca: atendimento premium, ambiente elegante e carros impecáveis.
+
+                O sucesso veio rápido. O boca a boca entre clientes apaixonados por supercarros e o cuidado dos
+                fundadores em oferecer experiências únicas fez a Autocar crescer. Em poucos anos, a marca expandiu,
+                inaugurando um showroom de luxo com identidade própria: paredes escuras, logotipo dourado e uma
+                atmosfera que remete à exclusividade de clubes privados.
+
+                Hoje, a Autocar é referência em carros de luxo no país, reunindo marcas como Ferrari, Lamborghini,
+                Bentley, Bugatti, McLaren, Audi e Porsche. Mas, para Grilo e Daniel, o verdadeiro diferencial nunca foi
+                apenas vender automóveis — e sim realizar sonhos.
+            </p>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-4" style="background-color: #1c1c1c;">
+        <p>&copy; 2025 AutoCar | Desenvolvido com Amor Dedicação</p>
+        <p>Endereço</p>
+        <p>Rua Joaquim Távora, 1279 – Vila Mariana, São Paulo – SP – 04015-002</p>
+        <p> Siga-nos nas redes sociais</p>
+        <img src="./src/sites/projeto1/1384063.png" alt="" height="30vh" width="30vw">
+        <p>Instagram: AutoCar.oficial</p>
+        <img src="./src/sites/projeto1/3046126.png" alt="" height="30vh" width="30vw">
+        <p>Tik Tok: AutoCar.oficial</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
